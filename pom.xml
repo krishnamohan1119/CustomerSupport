@@ -7,6 +7,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>customersupport Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<properties>
+		<!-- Hibernate / JPA -->
+		<!-- <hibernate.version>4.3.5.Final</hibernate.version> -->
+		<hibernate.version>3.6.9.Final</hibernate.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -67,16 +72,23 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.5.6-Final</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>customersupport</finalName>
 	</build>
-	<repositories>
-		<repository>
-			<id>git-sivakumarpeketi	</id>
-			<name>Customer Support</name>
-			<url>https://github.com/sivakumarpeketi/CustomerSupport/raw/master/</url>
-		</repository>
-	</repositories>
 </project>
