@@ -2,7 +2,7 @@ package com.customersupport.models;
 
 import java.util.Date;
 
-public abstract class CreatableObject {
+public abstract class CreatableObject extends DatabaseObject {
 
 	private int saveStatus;
 	private int version;
